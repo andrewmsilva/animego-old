@@ -164,10 +164,14 @@
       $atracao_id = ereg_replace("[^0-9]", '',$atracao_id);
       $sugestao = ereg_replace("[#'/*\|`]", '',$sugestao);
       require_once("mysql.php");
-      $query = $conexao->query("INSERT INTO inscricao VALUES (NULL,$usuario_id,$atracao_id,'$sugestao')");
+      $query = $conexao->query("SELECT * FROM inscricao WHERE usuario_id = $usuario_id AND atracao_id = $atracao_id");
       $id = 0;
-      if ($query == 1)
-        $id = $conexao->insert_id;
+      if($query->num_rows == 0)
+      {
+        $query = $conexao->query("INSERT INTO inscricao VALUES (NULL,$usuario_id,$atracao_id,'$sugestao')");
+        if ($query == 1)
+          $id = $conexao->insert_id;
+      }
       $conexao->close();
       return $id;
     }
@@ -234,15 +238,11 @@
   function select($text) 
   {
     $dados = array();
-    if(($text != "") && ($text != NULL))
-    {
-      require_once("mysql.php");
-      $query = $conexao->query("SELECT * FROM $text");
-      
-      while($row = mysqli_fetch_assoc($query))
-        $dados[] = $row;
-      $conexao->close();
-    }
+    require_once("mysql.php");
+    $query = $conexao->query("SELECT * FROM ".$text);
+    while($row = mysqli_fetch_assoc($query))
+      $dados[] = $row;
+    $conexao->close();
     return json_encode($dados);
   }
 
@@ -258,6 +258,7 @@
     'Seleciona tudo de qualquer coisa. Retorna json.'
   );
 
-  if ( !isset( $HTTP_RAW_POST_DATA ) ) $HTTP_RAW_POST_DATA =file_get_contents('php://input' ); $server->service($HTTP_RAW_POST_DATA); 
+  $HTTP_RAW_POST_DATA = isset($HTTP_RAW_POST_DATA) ? $HTTP_RAW_POST_DATA : '';
+  $server->service($HTTP_RAW_POST_DATA);
 
 ?>

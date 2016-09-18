@@ -16,7 +16,7 @@
     }
     elseif($_SESSION["permissao"] == 0) // usuario //
     {
-        $inscricoes_btn = '<button class="btn btn-primary" data-target="#inscricoes" data-toggle="modal">Suas inscrições</button>';
+        $inscricoes_btn = '<button class="btn btn-primary" data-target="#inscricoes" data-toggle="modal" style="margin-top:10px;">Suas inscrições</button>';
     }
     else // root //
     {

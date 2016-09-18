@@ -291,10 +291,6 @@
         </div>
     </section>
 
-
-
-    
-
     <!--Patrocinadores -->
     <aside class="clients" class="bg-light-gray">
         <div class="container">
@@ -400,62 +396,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-dismiss="modal" > 
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="close-modal" data-dismiss="modal" aria-hidden="true">
-						<div class="lr">
-							<div class="rl">
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--Conteudo aqui-->
-				<div class="modal-body">
-					<h2 id="myModalLabel">Nome do Cosplayer</h2>
-					<p class="item-intro text-muted">Frase motivacional</p>
-					<img class="img-responsive img-centered" src="img\cosplayers\1.png" alt="">
-					<p><strong>Um pouco sobre o cosplayer</strong></p>
-					<button type="button" class="btn btn-primary"><i class="fa fa-play"></i> Ver perfil</button>
-				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div>
-	
-    <!-- Cosplay Modal -->
-    <div class="portfolio-modal modal fade " id="cad-cosplay" role="dialog" aria-hidden="true" data-dismiss="modal"> 
-        <div class="modal-dialog" class="modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 style="margin-top:-12%;margin-right:20%;">Competição de Cosplays</h3>
-                    <div class="close-modal" data-dismiss="modal" aria-hidden="true">
-                        <div class="lr">
-                            <div class="rl">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Conteudo aqui-->
-                <div class="modal-body">
-                    <form method="POST" action="#">
-                        <div class="esp1" align="center">
-                            <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome completo" required autofocus>
-                            <input type="text" id="cpf" name="cpf" class="form-control" placeholder="Cpf" required> 
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>  
-                            <input type="text" id="personagem" name="personagem" class="form-control" placeholder="Personagem" required>    
-                            <input type="text" id="anime" name="anime" class="form-control" placeholder="Anime" required> 
-                        </div>
-                        <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 esp1">
-                            <button class="btn btn-sm col-xs-12 col-sm-12" id="inscricao" name="inscricao" type="submit">Inscrever</button>
-                        </div>
-                    </form>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div>
 	
 	<!--Recuperar-->
 	<div class="portfolio-modal modal fade" id="esenha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-dismiss="modal" > 
