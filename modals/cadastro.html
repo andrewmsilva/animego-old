@@ -1,0 +1,27 @@
+<div class="portfolio-modal modal fade" id="cadastro_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-dismiss="modal" > 
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal" aria-hidden="true">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<!--Conteudo aqui-->
+			<h4>Cadastro</h4>
+            <form method="POST" action="#">
+				<div class="esp1" align="center">
+					<input type="text" id="nome" name="nome" class="form-control" placeholder="Nome completo" required="" autofocus>
+					<input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+					<input type="text" id="telefone" name="telefone" class="form-control" placeholder="Telefone" required>
+                    <input type="password" id="senha1" name="senha1" class="form-control" placeholder="Senha" required>
+                    <input type="password" id="senha2" name="senha2" class="form-control" placeholder="Repetir senha" required>
+				</div>
+				<div class="btn-group">
+                    <button type="submit" class="btn btn-primary" id="cadastro" name="cadastro">Cadastrar</button>
+					<a class="btn btn-default" data-target="#login_modal" data-toggle="modal" data-dismiss="modal">Login</a>
+                </div>
+            </form>
+		</div>
+	</div>
+</div>

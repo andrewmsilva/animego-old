@@ -1,3 +1,11 @@
+<?php
+    // Iniciando sessão
+    if(!isset($_SESSION))
+        session_start();
+    require_once("conectar_service.php");
+    require_once("funcoes.php");
+?>
+
 <!DOCTYPE html>
 <html lang="Pt-Br">
 
@@ -31,162 +39,34 @@
             margin-top:5px;
             margin-bottom:5px;
         }
+        .col-xs-6,.col-lg-6,.text-center
+        {
+            margin-bottom: 20px;
+        }
     </style>
 
 </head>
 
 <body id="page-top" class="index">
 
-    <!-- Navegação -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container ">
-            <!-- Display mobile -->
+    <?php
+        require_once("nav.php");
+        require_once("carousel.html");
+        if(!isset($_SESSION["id"])) // não logado //
+        {
+            require_once("modals/login.html");
+            require_once("modals/cadastro.html");
+        }
+        elseif($_SESSION["permissao"] == 0) // usuario //
+        {
+            require_once("modals/inscricoes.php");
+        }
+        else // root //
+        {
 
-            <div class="navbar-header page-scroll col-sm-1 col-md-3 col-lg-3">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll hidden-sm"  href="#page-top">Anime Go!</a>
-				<a class="navbar-brand page-scroll visible-sm-block"  href="#page-top">AG!</a>
-            </div>
+        }
 
-            <!-- Barra de navegação -->
-            <div class="collapse navbar-collapse col-sm-8 col-md-9 col-lg-9" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll btn" href="#sobre">Sobre o evento</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll btn" href="#atracoes">Atrações</a>
-                    </li>
-					<li class="">
-                        <a class="page-scroll btn" href="#local">Localização</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll btn" href="#team">Equipe</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll btn" href="#contact">Contato</a>
-                    </li>
-					<!--Login mobile-->
-					<li class="visible-xs-block portfolio-item">
-                        <a class="portfolio-link btn" data-toggle="modal" href="#login">Login</a>
-                    </li>
-					<!--Login dropdown-->
-					<li class="dropdown">
-                        <a href="#" class="dropdown-toggle btn hidden-xs" data-toggle="dropdown">Login<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>                               
-								<div class="container-fluid text-center">
-									<h4>Login</h4>
-									<div class="col-xs-12 col-sm-12 esp1">
-										<button href="#cadastro" class="btn btn-sm col-xs-12 col-sm-12 portfolio-link" type="submit" data-toggle="modal">Cadastrar</button>
-									</div>
-									<div class="esp1" align="center">
-										<label for="inputEmail" class="sr-only">login</label>
-										<input type="email" id="inputEmail" class="form-control" placeholder="Login" required="" autofocus="">
-										<label for="inputPassword" class="sr-only">senha</label>
-										<input type="password" id="inputPassword" class="form-control" placeholder="Senha" required="">	
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="remember-me">Lembre-me
-										</label>
-									</div>
-									<div class="col-xs-12 col-sm-12">
-										<button class="btn btn-sm col-xs-12 col-sm-12" type="submit">Entrar</button>
-										<a href="#esenha" class="col-xs-12 col-sm-12 esp1 portfolio-link" type="submit" data-toggle="modal">Esqueci minha senha</a>
-									</div>	
-								</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-	<!--Carrosel-->
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!--Indicadores-->
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1" class=""></li>
-			<li data-target="#myCarousel" data-slide-to="2" class=""></li>
-			<li data-target="#myCarousel" data-slide-to="3" class=""></li>
-			<li data-target="#myCarousel" data-slide-to="4" class=""></li>
-			<li data-target="#myCarousel" data-slide-to="5" class=""></li>
-
-		</ol>
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<img class="first-slide" src="img\1.png" alt="Primeiro slide">
-				<div class="container">
-					<div class="carousel-caption">
-						<h1>Competição Cosplays</h1>
-						<p>Seja quem você quiser e concorra a muitos prêmios!</p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img class="second-slide" src="img\2.png" alt="Segundo slide">
-				<div class="container">
-					<div class="carousel-caption">
-					  <h1>Animekê</h1>
-					  <p>Mostre seu talento!</p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img class="third-slide" src="img\3.png" alt="Terceiro slide">
-				<div class="container">
-					<div class="carousel-caption">
-					  <h1>Música</h1>
-					  <p>Ouça as melhores músicas!</p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img class="fourth-slide" src="img\4.png" alt="Quarto slide">
-				<div class="container">
-					<div class="carousel-caption">
-					  <h1>Games</h1>
-                      <p>Aventure-se nos Games disponíveis!</p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img class="fourth-slide" src="img\5.png" alt="Quinto slide">
-				<div class="container">
-					<div class="carousel-caption">
-					  <h1>Batalha Campal</h1>
-                      <p>Se quiser sobreviver, lute!</p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img class="fourth-slide" src="img\6.png" alt="Sexto slide">
-				<div class="container">
-					<div class="carousel-caption">
-					  <h1>Dança</h1>
-                      <p>Seja fofo ou tradicional, deixe sua marca!</p>
-					</div>
-				</div>
-			</div>
-		</div>
-    </div>
-	<!--<div class="Container">
-		<div class="col-xs-12 col-lg-12 text-center esp 1">
-			<button href="#portfolioModal1" class="btn btn-sm col-lg-4 col-lg-offset-4 portfolio-link" type="submit" data-toggle="modal">Abrir Modal</button>
-		</div>
-	</div>-->
+    ?>
 	
 	<!-- Header -->
 	<header>
@@ -197,43 +77,14 @@
             </div>
             <div class="row" style="margin-top:-20%;padding-bottom:60px;">
                 <div class="col-xs-12 col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">O AnimeGo! 1º Edição é o primeiro evento do oeste de SC cujo o tema é cultura japonesa, coreana e otaku! A primeira edição do evento será em Chapecó, contando com workshops, competições, músicas e muitas outras atrações.</h3>
+                    <h3 class="section-subheading text-muted">O AnimeGo! 1º Edição é o primeiro evento do oeste de SC cujo o tema é cultura geek, oriental e otaku! A primeira edição do evento será em Chapecó, contando com workshops, competições, músicas e muitas outras atrações.</h3>
                     <p><button href="#onde" class="btn btn-default" data-toggle="modal" style="margin-top:20px;">Clique aqui para saber como adquirir um ingresso</button></p>
                 </div>
             </div>
         </div>
     </header>
 
-    <!--Atrações-->  
-    <section id="atracoes" class="bg-light-gray">
-        <div class="container">
-            <div class="col-xs-12 col-lg-12 text-center" style="margin-top:0px;">
-                <h2 class="section-heading" style="margin-bottom:30px;">Atrações</h2>
-                <div class="col-xs-6 col-lg-6 text-center">
-                    <h4 class="section-subheading text-muted">Competição de Cosplays</h4>
-                    <p>Participe da Competição de Cosplays e, se for capaz, ganhe muitos prêmios! A avaliação é realizada nos dias e no local do evento, a qual é baseada na aparência e no comportamento do personagem escolhido. A inscrição é gratuita e será uma das pincipais atrações!</p>
-                    <div class="btn-group">
-                        <button class="btn btn-primary" data-target="#cad-cosplay" data-toggle="modal">Inscreva-se aqui</button>
-                        <button class="btn btn-default" data-target="#cad-cosplay" data-toggle="modal">Edite sua inscrição</button>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-lg-6 text-center">
-                    <h4 class="section-subheading text-muted">Batalha campal</h4>
-                    <p>Equipe sua arma, defina um estilo de luta e torne-se o melhor dos guerreiros!</p>
-                </div>
-                <div class="col-xs-6 col-lg-6 text-center">
-                    <h4 class="section-subheading text-muted">Workshops</h4>
-                    <p>Aproveite também para adiquirir muito conhecimento ao partipar do AnimeGo! Atualmente contamos com os seguintes temas:</p>
-                    <li>Culinária Oriental</li>
-                    <li>Japonês</li>
-                </div>
-                <div class="col-xs-6 col-lg-6 text-center">
-                    <h4 class="section-subheading text-muted">Workshops</h4>
-                    <p>Culinária Japonesa</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php require_once("atracoes.php"); ?>
 
 	<!--Localização-->	
     <section id="local">
@@ -549,45 +400,7 @@
             </div>
         </div>
     </footer>
-    <!--Modals-->
-	
-	<!--Login Modal-->
-	<div class="portfolio-modal modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-dismiss="modal" > 
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="close-modal" data-dismiss="modal" aria-hidden="true">
-						<div class="lr">
-							<div class="rl">
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--Conteudo aqui-->
-				<h4>Login</h4>
-				<div class="col-xs-6 col-xs-offset-3 esp1">
-					<button href="#cadastro" class="btn btn-sm col-xs-12 portfolio-link" type="submit" data-toggle="modal" data-dismiss="modal">Cadastrar</button>
-				</div>
-				<div class="esp1" align="center">
-					<label for="inputEmail" class="sr-only">login</label>
-					<input type="email" id="inputEmail" class="form-control" placeholder="Login" required="" autofocus="">
-					<label for="inputPassword" class="sr-only">senha</label>
-					<input type="password" id="inputPassword" class="form-control" placeholder="Senha" required="">	
-				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox" value="remember-me">Lembre-me
-					</label>
-				</div>
-				<div class="col-xs-6 col-xs-offset-3">
-					<button class="btn btn-sm col-xs-12" type="submit">Entrar</button>
-					<a href="#esenha" class="col-xs-12 esp1 portfolio-link" type="submit" data-toggle="modal" data-dismiss="modal">Esqueci minha senha</a>
-				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div>
-	<!--//Login Modal-->
-	
+
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-dismiss="modal" > 
 		<div class="modal-dialog" role="document">
@@ -664,46 +477,6 @@
 						<button class="btn btn-sm col-xs-12 col-sm-12" type="submit">Recuperar</button>
 					</div>
 				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div>
-	
-	<!--Cadastro-->
-	<div class="portfolio-modal modal fade" id="cadastro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-dismiss="modal" > 
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal" aria-hidden="true">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
-				<!--Conteudo aqui-->
-				<h4>Cadastro</h4>
-					<div class="esp1" align="center">
-						<label for="" class="sr-only">Nome</label>
-						<input type="" id="" class="form-control" placeholder="Nome completo" required="" autofocus="">
-						<label for="" class="sr-only">Senha</label>
-						<input type="" id="" class="form-control" placeholder="Senha" required="">	
-						<label for="" class="sr-only">Repetir senha</label>
-						<input type="" id="" class="form-control" placeholder="Repetir senha" required="">	
-						<label for="" class="sr-only">Email</label>
-						<input type="" id="" class="form-control" placeholder="Email" required="">	
-						<label for="" class="sr-only">Celular</label>
-						<input type="" id="" class="form-control" placeholder="Celular" required="">	
-						<label for="" class="sr-only">CPF</label>
-						<input type="" id="" class="form-control" placeholder="Cpf" required="">	
-						<label for="" class="sr-only">Data de nascimento</label>
-						<input type="" id="" class="form-control" placeholder="Data de nascimento" required="">	
-					</div>
-					<div class="checkbox">
-						<label>
-							<input type="checkbox" value="remember-me" required="">Li e aceito os <a href=#>termos de uso</a>
-						</label>
-					</div>
-					<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 esp1">
-						<button class="btn btn-sm col-xs-12 col-sm-12" type="submit">Cadastrar</button>
-					</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div>
