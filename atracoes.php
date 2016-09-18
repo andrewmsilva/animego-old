@@ -2,6 +2,7 @@
     //----------COMPONENTES----------//
     $login_cad = '';
     $inscricoes_btn = '';
+    $admin = '';
 
     //------CONDIÇÕES DE ACESSO------//
     if(!isset($_SESSION["id"])) // sem login //
@@ -18,9 +19,15 @@
     {
         $inscricoes_btn = '<button class="btn btn-primary" data-target="#inscricoes" data-toggle="modal" style="margin-top:10px;">Suas inscrições</button>';
     }
-    else // root //
+    elseif($_SESSION["permissao"] == 1) // root //
     {
-        
+        $admin = '<div class="btn-group">
+                    <a class="btn btn-primary" href="#cosplay_modal" data-toggle="modal">Cosplays</a>
+                    <a class="btn btn-primary" href="#animeke_modal" data-toggle="modal">Animekê</a>
+                    <a class="btn btn-primary" href="#culinaria_modal" data-toggle="modal">Culinária</a>
+                    <a class="btn btn-primary" href="#japones_modal" data-toggle="modal">Japonês</a>
+                    <a class="btn btn-primary" href="#ingles_modal" data-toggle="modal">Inglês</a>
+                </div>';
     }
 
 ?>
@@ -28,7 +35,7 @@
 <section id="atracoes" class="bg-light-gray">
     <div class="container">
         <div class="col-xs-12 col-lg-12 text-center" style="margin-top:0px;">
-            <h2 class="section-heading" style="margin-bottom:30px;">Atrações<br><?php echo $inscricoes_btn; ?></h2>
+            <h2 class="section-heading" style="margin-bottom:30px;">Atrações<br><?php echo $inscricoes_btn.$admin; ?></h2>
             <div class="col-xs-6 col-lg-6 text-center">
                 <h4 class="section-subheading text-muted">Competição de Cosplays</h4>
                 <p>Participe da Competição de Cosplays e, se for capaz, ganhe muitos prêmios! A avaliação é realizada nos dias e no local do evento, a qual é baseada na aparência e no comportamento do personagem escolhido. A inscrição é gratuita e deve ser aqui no site.</p>

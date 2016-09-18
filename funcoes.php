@@ -21,7 +21,7 @@
 			echo '<script>alert("Erro ao realizar login!")</script>';
 		else
 		{
-			$json = $service->call('select',array('usuario WHERE id = '.$id));
+			$json = $service->call('select',array('SELECT * FROM usuario WHERE id = '.$id));
 			$usuario = json_decode($json);
 			$_SESSION["id"] = $id;
 			$_SESSION["permissao"] = $usuario[0]->permissao;

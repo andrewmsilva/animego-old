@@ -63,7 +63,7 @@
         }
         else // root //
         {
-
+            require_once("modals/admin.php");
         }
 
     ?>

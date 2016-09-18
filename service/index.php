@@ -239,7 +239,7 @@
   {
     $dados = array();
     require_once("mysql.php");
-    $query = $conexao->query("SELECT * FROM ".$text);
+    $query = $conexao->query($text);
     while($row = mysqli_fetch_assoc($query))
       $dados[] = $row;
     $conexao->close();

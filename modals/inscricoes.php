@@ -52,7 +52,7 @@
                         </div>
                     </form>';
     //---------AÇÕES---------//
-    $json = $service->call('select',array('inscricao WHERE usuario_id = '.$_SESSION["id"]));
+    $json = $service->call('select',array('SELECT * FROM inscricao WHERE usuario_id = '.$_SESSION["id"]));
     $inscricao = json_decode($json);
     if(count($inscricao) != 0)
     {
@@ -60,7 +60,7 @@
         {
             if($inscricao[$i]->atracao_id == 1)
             {
-                $json = $service->call('select',array('cosplay WHERE inscricao_id = '.$inscricao[$i]->id));
+                $json = $service->call('select',array('SELECT * FROM cosplay WHERE inscricao_id = '.$inscricao[$i]->id));
                 echo '<script>alert("'.$json.$inscricao[$i]->id.'");</script>';
                 $cosplay = json_decode($json);
                 $cosplay_btn = '<button class="btn btn-default" data-target="#cosplay_modal" data-toggle="modal" data-dismiss="modal">Alterar inscrição</button>';

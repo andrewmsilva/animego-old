@@ -22,6 +22,8 @@ create table usuario (
 	permissao integer(1) not null
 );
 
+insert into usuario values(null,"Equipe AnimeGo!","root@animego.com","123","21eb94f9bb25cf2d15d03b718d092df9",1);
+
 create table inscricao (
 	id integer unsigned not null primary key auto_increment,
 	usuario_id integer unsigned not null,
