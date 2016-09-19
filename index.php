@@ -78,7 +78,6 @@
             <div class="row" style="margin-top:-20%;padding-bottom:60px;">
                 <div class="col-xs-12 col-lg-12 text-center">
                     <h3 class="section-subheading text-muted">O AnimeGo! 1º Edição é o primeiro evento do oeste de SC cujo o tema é cultura geek, oriental e otaku! A primeira edição do evento será em Chapecó, contando com workshops, competições, músicas e muitas outras atrações.</h3>
-                    <p><button href="#onde" class="btn btn-default" data-toggle="modal" style="margin-top:20px;">Clique aqui para saber como adquirir um ingresso</button></p>
                 </div>
             </div>
         </div>
@@ -111,172 +110,112 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-6 col-sm-4">
+                <div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/1.png" class="img-responsive img-circle" alt="">
-                        <h4>Pessoa 1</h4>
-                        <p class="text-muted">Descrição</p>
+                        <img src="img/time/naomi.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Naomi Fernanda</h4>
+                        <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.facebook.com/naomi.f.mello"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-4">
+                <div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/2.png" class="img-responsive img-circle" alt="">
-                        <h4>Pessoa 2</h4>
-                        <p class="text-muted">Descrição</p>
+                        <img src="img/time/luan.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Luan Félix</h4>
+                        <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.facebook.com/luanfelixpimentel"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-				<div class="col-xs-6 col-sm-4">
+				<div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/3.png" class="img-responsive img-circle" alt="">
-                        <h4>Pessoa 3</h4>
-                        <p class="text-muted">Descrição</p>
+                        <img src="img/time/mark.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Marco Antônio</h4>
+                        <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.facebook.com/srkimihiro"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-				<div class="col-xs-6 col-sm-4">
+				<div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/4.png" class="img-responsive img-circle" alt="">
-                        <h4>Pessoa 4</h4>
-                        <p class="text-muted">Descrição</p>
+                        <img src="img/time/william.jpg" class="img-responsive img-circle" alt="">
+                        <h4>William Versa</h4>
+                        <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.facebook.com/william.versa"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-				<div class="col-xs-6 col-sm-4">
+				<div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/5.png" class="img-responsive img-circle" alt="">
-                        <h4>Pessoa 5</h4>
-                        <p class="text-muted">Descrição</p>
+                        <img src="img/time/fernanda.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Fernanda Bonetti</h4>
+                        <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.facebook.com/OlaFernanda"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-				<div class="col-xs-6 col-sm-4">
+				<div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/6.png" class="img-responsive img-circle" alt="">
-                        <h4>Pessoa 6</h4>
-                        <p class="text-muted">Descrição</p>
+                        <img src="img/time/raphael.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Raphael Borges</h4>
+                        <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.facebook.com/oRaphaBorges"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-				<div class="col-xs-6 col-sm-4">
+				<div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/7.png" class="img-responsive img-circle" alt="">
-                        <h4>Pessoa 7</h4>
-                        <p class="text-muted">Descrição</p>
+                        <img src="img/time/andrew.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Andrew Malta</h4>
+                        <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.facebook.com/AndrewMaltaa"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-				<div class="col-xs-6 col-sm-4">
+				<div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/8.png" class="img-responsive img-circle" alt="">
-                        <h4>Pessoa 8</h4>
-                        <p class="text-muted">Descrição</p>
+                        <img src="img/time/gabriel.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Gabriel Vassoler</h4>
+                        <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.facebook.com/gabriel.vas.1"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-				<div class="col-xs-6 col-sm-4">
+				<div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/9.png" class="img-responsive img-circle" alt="">
-                        <h4>Pessoa 9</h4>
-                        <p class="text-muted">Descrição</p>
+                        <img src="img/time/jessica.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Jéssica Souza</h4>
+                        <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.facebook.com/jessie.medeleyne"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-				<div class="col-xs-6 col-sm-4">
+				<div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/10.png" class="img-responsive img-circle" alt="">
-                        <h4>Pessoa 10</h4>
-                        <p class="text-muted">Descrição</p>
+                        <img src="img/time/rute.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Rute Cintra</h4>
+                        <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.facebook.com/ruteoliveiracintra"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -290,37 +229,6 @@
             </div>
         </div>
     </section>
-
-    <!--Patrocinadores -->
-    <aside class="clients" class="bg-light-gray">
-        <div class="container">
-			<br>
-			<h2 class="section-heading text-center">Patrocinadores</h2>
-			<br>
-            <div class="row">
-                <div class="col-xs-3 col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-xs-3 col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-xs-3 col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-xs-3 col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
     
     <!--Contato-->
     <section id="contact">
@@ -328,37 +236,37 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Fale conosco</h2>
-                    <h3 class="section-subheading text-muted">Algum problema, crítica, ideia? Fale com a gente!</h3>
+                    <h3 class="section-subheading text-muted">Algum problema, crítica ou ideia? Fale com a gente!</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12" align="center">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form method="POST" action="#">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Seu nome *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Seu nome *" id="name" name="name" required>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Seu email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" placeholder="Seu email *" id="email" name="email" required>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Seu celular *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="text" class="form-control" placeholder="Seu número de telefone" id="phone" name="phone">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Sua mensagem *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="Sua mensagem *" id="message" name="message" required></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Enviar mensagem</button>
+                                <button type="submit" id="contact_me" name="contact_me" class="btn btn-xl">Enviar mensagem</button>
                             </div>
                         </div>
                     </form>
@@ -379,7 +287,6 @@
 						</li>
 						<li><a href="#"><i class="fa fa-twitter"></i></a>
 						</li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a>
 						</li>
 						<li><a href="#"><i class="fa fa-linkedin"></i></a>
 						</li>
@@ -396,82 +303,6 @@
             </div>
         </div>
     </footer>
-	
-	<!--Recuperar-->
-	<div class="portfolio-modal modal fade" id="esenha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-dismiss="modal" > 
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal" aria-hidden="true">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
-				<!--Conteudo aqui-->
-				<h4>Recuperação de senha</h4>
-				<h5>Enviar um email com a senha cadastrada</h5>
-				<div class=" esp1" align="center">
-					<label for="inputEmail" class="sr-only">Email</label>
-					<input type="email" id="inputEmail" class="form-control" placeholder="Email" required="" autofocus="">
-					<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 esp1">
-						<button class="btn btn-sm col-xs-12 col-sm-12" type="submit">Recuperar</button>
-					</div>
-				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div>
-	
-	<!--Lista de vendedores-->	
-	<div class="portfolio-modal modal fade" id="onde" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-dismiss="modal" > 
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-					<div class="close-modal" data-dismiss="modal" aria-hidden="true">
-						<div class="lr">
-							<div class="rl">
-							</div>
-						</div>
-					</div>
-				<!--Conteudo aqui-->
-				<table class="table">
-					<caption class="text-center">Lista de vendedores</caption> 
-					<thead> 
-						<tr> 
-							<th>#</th> 
-							<th>Nome</th> 
-							<th>Endereço</th> 
-						</tr> 
-					</thead> 
-					<tbody> 
-						<tr> 
-							<th scope="row">1</th> 
-							<td>Lugar</td> 
-							<td>End. do lugar 876-D</td> 
-						</tr> 
-						<tr>
-							<th scope="row">2</th> 
-							<td>Lugar 2</td> 
-							<td>End. do lugar 876-D</td> 
-						</tr>
-						<tr> 
-							<th scope="row">3</th> 
-							<td>Lugar 3</td> 
-							<td>End. do lugar 876-D</td>  
-						</tr> 
-					</tbody> 
-				</table>
-				<div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 esp1">
-					<button class="btn btn-sm col-xs-12 col-sm-12" type="submit">Recuperar</button>
-				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div>
-
-
-	
-	
-
-	
-	
 	
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
