@@ -38,18 +38,18 @@
             <h2 class="section-heading" style="margin-bottom:30px;">Atrações<br><?php echo $inscricoes_btn.$admin; ?></h2>
             <div class="col-xs-6 col-lg-6 text-center">
                 <h4 class="section-subheading text-muted">Competição de Cosplays</h4>
-                <p>Participe da Competição de Cosplays e, se for capaz, ganhe muitos prêmios! A avaliação é realizada nos dias e no local do evento, a qual é baseada na aparência e no comportamento do personagem escolhido. A inscrição é gratuita e deve ser aqui no site.</p>
+                <p>Participe da Competição de Cosplays e, se for capaz, ganhe muitos prêmios! A avaliação é realizada nos dias e no local do evento, a qual é baseada na aparência e no comportamento do personagem escolhido. A inscrição é gratuita e deve ser feita aqui no site.</p>
             </div>
             <div class="col-xs-6 col-lg-6 text-center">
                 <h4 class="section-subheading text-muted">Workshops</h4>
-                <p>Aproveite também para adiquirir muito conhecimento ao partipar do AnimeGo! Para participar, basta inscrever-se pelo site e pagar um pequeno valor no dia do evento. Atualmente contamos com os seguintes temas:</p>
+                <p>Aproveite também para adquirir muito conhecimento ao partipar do AnimeGo! Para participar, basta inscrever-se pelo site e pagar um pequeno valor no dia do evento. Atualmente contamos com os seguintes temas:</p>
                 <li>Culinária Oriental - R$ 20,00</li>
                 <li>Língua Japonesa - R$ 5,00</li>
                 <li>Língua Inglesa - R$ 5,00</li>
             </div>
             <div class="col-xs-6 col-lg-6 text-center">
                 <h4 class="section-subheading text-muted">Animekê</h4>
-                <p>Já pensou em cantar as melhores músicas e ainda ganhar prêmios? Aqui é possível! O vencedor também terá a poderá de se apresentar no palco para todos os presentes. Para participar, é só inscrever-se aqui pelo site!</p>
+                <p>Já pensou em cantar as melhores músicas e ainda ganhar prêmios? Aqui é possível! O vencedor também poderá se apresentar no palco para todos os presentes. Para participar, é só inscrever-se aqui pelo site!</p>
             </div>
             <div class="col-xs-6 col-lg-6 text-center">
                 <h4 class="section-subheading text-muted">Batalha campal</h4>
