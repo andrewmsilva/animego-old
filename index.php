@@ -156,11 +156,11 @@
                 </div>
 				<div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/fernanda.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Fernanda Bonetti</h4>
+                        <img src="img/time/fran.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Franciene Bernardi</h4>
                         <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="https://www.facebook.com/OlaFernanda"><i class="fa fa-facebook"></i></a>
+                            <li><a href="https://www.facebook.com/fran.bernardi"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -211,11 +211,22 @@
                 </div>
 				<div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/rute.jpg" class="img-responsive img-circle" alt="">
+                        <img src="img/time/guilherme.jpg" class="img-responsive img-circle" alt="">
                         <h4>Rute Cintra</h4>
                         <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
                             <li><a href="https://www.facebook.com/ruteoliveiracintra"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <div class="team-member">
+                        <img src="img/time/rute.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Guilherme Konopatzki</h4>
+                        <p class="text-muted"></p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://www.facebook.com/guilherme.konopatzki"><i class="fa fa-facebook"></i></a>
                             </li>
                         </ul>
                     </div>

@@ -2,8 +2,8 @@
   require_once ('lib/nusoap.php');
 
   $server = new soap_server; 
-  $namespace = 'urn:animego';
-  $server->configureWSDL('animego', 'urn:animego');
+  $namespace = 'http://animego.esy.es/service/index.php?wsdl';
+  $server->configureWSDL('animego',$namespace);
 
   class usuario
   {
@@ -54,33 +54,21 @@
     'usuario.insert',
     array('nome' => 'xsd:string','email' => 'xsd:string','telefone' => 'xsd:string','senha' => 'xsd:string'),
     array('return' => 'xsd:int'),
-    $namespace,
-    $namespace.'#usuario.insert',
-    'rpc',
-    'encoded',
-    'Insere um registro na tabela usuario. Retorna o id.'
+    $namespace
   );
   $server->register
   (
     'usuario.login',
     array('email' => 'xsd:string','senha' => 'xsd:string'),
     array('return' => 'xsd:int'),
-    $namespace,
-    $namespace.'#usuario.login',
-    'rpc',
-    'encoded',
-    'Realiza o login do usuario. Retorna o id.'
+    $namespace
   );
   $server->register
   (
     'usuario.delete',
     array('id' => 'xsd:int'),
     array('return' => 'xsd:int'),
-    $namespace,
-    $namespace.'#usuario.delete',
-    'rpc',
-    'encoded',
-    'Deleta um registro na tabela usuario. Retorna boolean.'
+    $namespace
   );
 
 
@@ -127,33 +115,21 @@
     'cosplay.insert',
     array('inscricao_id' => 'xsd:int','personagem' => 'xsd:string','anime' => 'xsd:string'),
     array('return' => 'xsd:int'),
-    $namespace,
-    $namespace.'#cosplay.insert',
-    'rpc',
-    'encoded',
-    'Insere um registro na tabela cosplay. Retorna o id.'
+    $namespace
   );
   $server->register
   (
     'cosplay.update',
     array('id' => 'xsd:int','personagem' => 'xsd:string','anime' => 'xsd:string'),
     array('return' => 'xsd:int'),
-    $namespace,
-    $namespace.'#cosplay.update',
-    'rpc',
-    'encoded',
-    'Atualiza um registro da tabela cosplay. Retorna o id.'
+    $namespace
   );
   $server->register
   (
     'cosplay.delete',
     array('id' => 'xsd:int'),
     array('return' => 'xsd:int'),
-    $namespace,
-    $namespace.'#cosplay.delete',
-    'rpc',
-    'encoded',
-    'Deleta um registro na tabela cosplay. Retorna boolean.'
+    $namespace
   );
 
   class inscricao
@@ -206,33 +182,21 @@
     'inscricao.insert',
     array('usuario_id' => 'xsd:int','atracao_id' => 'xsd:int','sugestao' => 'xsd:string'),
     array('return' => 'xsd:int'),
-    $namespace,
-    $namespace.'#inscricao.insert',
-    'rpc',
-    'encoded',
-    'Insere um registro na tabela inscricao. Retorna o id.'
+    $namespace
   );
   $server->register
   (
     'inscricao.update',
     array('id' => 'xsd:int','sugestao' => 'xsd:string'),
     array('return' => 'xsd:int'),
-    $namespace,
-    $namespace.'#inscricao.update',
-    'rpc',
-    'encoded',
-    'Atualiza um registro da tabela inscricao. Retorna o id.'
+    $namespace
   );
   $server->register
   (
     'inscricao.delete',
     array('id' => 'xsd:int'),
     array('return' => 'xsd:int'),
-    $namespace,
-    $namespace.'#inscricao.delete',
-    'rpc',
-    'encoded',
-    'Deleta um registro na tabela inscricao. Retorna boolean.'
+    $namespace
   );
 
   function select($text) 
@@ -251,11 +215,7 @@
     'select',
     array('text' => 'xsd:string'),
     array('return' => 'xsd:string'),
-    $namespace,
-    $namespace.'#select',
-    'rpc',
-    'encoded',
-    'Seleciona tudo de qualquer coisa. Retorna json.'
+    $namespace
   );
 
   $HTTP_RAW_POST_DATA = isset($HTTP_RAW_POST_DATA) ? $HTTP_RAW_POST_DATA : '';
