@@ -100,7 +100,7 @@
     </section>
 
 	<!--Time-->
-    <section id="team">
+    <section id="team" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-lg-12 text-center">
@@ -210,7 +210,7 @@
                 </div>
 				<div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/guilherme.jpg" class="img-responsive img-circle" alt="">
+                        <img src="img/time/rute.jpg" class="img-responsive img-circle" alt="">
                         <h4>Rute Cintra</h4>
                         <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
@@ -221,7 +221,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-3">
                     <div class="team-member">
-                        <img src="img/time/rute.jpg" class="img-responsive img-circle" alt="">
+                        <img src="img/time/guilherme.jpg" class="img-responsive img-circle" alt="">
                         <h4>Guilherme Konopatzki</h4>
                         <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
@@ -235,6 +235,21 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <p class="large text-muted">Gostaria de entrar em contato com algum membro da equipe? Clique em um dos ícones das redes sociais!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pat">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 text-center">
+                    <h2 class="section-heading">Nossos patrocinadores</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 text-center">
+                    <img src="img/patrocinadores.png" style="width: 100%">
                 </div>
             </div>
         </div>
