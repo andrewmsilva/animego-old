@@ -3,7 +3,6 @@
     $cosplay_btn = '<button class="btn btn-primary" data-target="#cosplay_modal" data-toggle="modal" data-dismiss="modal">Inscrever-se</button>';
     $animeke_btn = '<button class="btn btn-primary" data-target="#animeke_modal" data-toggle="modal" data-dismiss="modal">Inscrever-se</button>';
     $culinaria_btn = '<button class="btn btn-primary" data-target="#culinaria_modal" data-toggle="modal" data-dismiss="modal">Inscrever-se</button>';
-    $japones_btn = '<button class="btn btn-primary" data-target="#japones_modal" data-toggle="modal" data-dismiss="modal">Inscrever-se</button>';
     $ingles_btn = '<button class="btn btn-primary" data-target="#ingles_modal" data-toggle="modal" data-dismiss="modal">Inscrever-se</button>';
     $cosplay_html = '<form method="POST" action="#">
                         <div class="esp1" align="center">
@@ -30,15 +29,6 @@
                         </div>
                         <div class="btn-group">
                             <button type="submit" class="btn btn-primary" id="insert_culinaria" name="insert_culinaria">Increver-se</button>
-                            <a class="btn btn-default" data-target="#inscricoes" data-toggle="modal" data-dismiss="modal">Voltar</a>
-                        </div>
-                    </form>';
-    $japones_html = '<form method="POST" action="#">
-                        <div class="esp1" align="center">
-                            <textarea type="text" id="sugestao" maxlength=200 name="sugestao" class="form-control" placeholder="Sugestões. Ex: livros, métodos, etc." autofocus></textarea>
-                        </div>
-                        <div class="btn-group">
-                            <button type="submit" class="btn btn-primary" id="insert_japones" name="insert_japones">Increver-se</button>
                             <a class="btn btn-default" data-target="#inscricoes" data-toggle="modal" data-dismiss="modal">Voltar</a>
                         </div>
                     </form>';
@@ -104,20 +94,6 @@
                                     </div>
                                 </form>';
             }
-            elseif($inscricao[$i]->atracao_id == 4)
-            {
-                $japones_btn = '<button class="btn btn-default" data-target="#japones_modal" data-toggle="modal" data-dismiss="modal">Alterar inscrição</button>';
-                $japones_html = '<form method="POST" action="#">
-                                    <div class="esp1" align="center">
-                                        <textarea type="text" id="sugestao" maxlength=200 name="sugestao" class="form-control" placeholder="Sugestões. Ex: livros, métodos, etc." autofocus>'.$inscricao[$i]->sugestao.'</textarea>
-                                        <input type="hidden" id="id" name="id" value="'.$inscricao[$i]->id.'">
-                                    </div>
-                                    <div class="btn-group">
-                                        <button type="submit" class="btn btn-primary" id="update_japones" name="update_japones">Alterar inscrição</button>
-                                        <a class="btn btn-default" data-target="#inscricoes" data-toggle="modal" data-dismiss="modal">Voltar</a>
-                                    </div>
-                                </form>';
-            }
             elseif($inscricao[$i]->atracao_id == 5)
             {
                 $ingles_btn = '<button class="btn btn-default" data-target="#ingles_modal" data-toggle="modal" data-dismiss="modal">Alterar inscrição</button>';
@@ -157,10 +133,8 @@
                 </div>
                 <div class="col-xs-6 col-lg-6 text-center" >
                     <h4 class="section-subheading text-muted" style="color:#ff0080;">Workshops</h4>
-                    <h5 class="section-subheading text-muted">Culinária Oriental</h5>
+                    <h5 class="section-subheading text-muted">Cultura e culinária japonesa</h5>
                     <?php echo $culinaria_btn; ?>
-                    <h5 class="section-subheading text-muted">Língua Japonesa</h5>
-                    <?php echo $japones_btn; ?>
                     <h5 class="section-subheading text-muted">Língua Inglesa</h5>
                     <?php echo $ingles_btn; ?>
                 </div>
@@ -217,27 +191,8 @@
             </div>
             <!--Conteudo aqui-->
             <div class="modal-body">
-            <p>Valor: R$ 20,00 (pagar no local)</p>
+            <p>Valor: R$ 10,00 (pagar no local)</p>
             <?php echo $culinaria_html; ?>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal fade " id="japones_modal" role="dialog" aria-hidden="true" data-dismiss="modal"> 
-    <div class="modal-dialog" class="modal-lg" role="document">
-        <div class="modal-content" style="height:380px;">
-            <h3 style="margin-top:-12%;margin-right:20%;">Workshop de Japonês</h3>
-            <div class="close-modal" data-dismiss="modal" aria-hidden="true">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <!--Conteudo aqui-->
-            <div class="modal-body">
-            <p>Valor: R$ 5,00 (pagar no local)</p>
-            <?php echo $japones_html; ?>
             </div>
         </div>
     </div>
@@ -255,7 +210,7 @@
             </div>
             <!--Conteudo aqui-->
             <div class="modal-body">
-            <p>Valor: R$ 5,00 (pagar no local)</p>
+            <p>Valor: Gratuito</p>
             <?php echo $ingles_html; ?>
             </div>
         </div>

@@ -52,18 +52,17 @@
     <?php
         require_once("nav.php");
         require_once("carousel.html");
-        if(!isset($_SESSION["id"])) // não logado //
+        if(!isset($_SESSION["permissao"])) // não logado //
         {
             require_once("modals/login.html");
             require_once("modals/cadastro.html");
         }
-        elseif($_SESSION["permissao"] == 0) // usuario //
+        else
         {
-            require_once("modals/inscricoes.php");
-        }
-        else // root //
-        {
-            require_once("modals/admin.php");
+            if($_SESSION["permissao"] == 0) // usuario //
+                require_once("modals/inscricoes.php");
+            else // root //
+                require_once("modals/admin.php");
         }
 
     ?>
@@ -77,7 +76,7 @@
             </div>
             <div class="row" style="margin-top:-20%;padding-bottom:60px;">
                 <div class="col-xs-12 col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">O AnimeGo! 1º Edição é o primeiro evento do oeste de SC cujo o tema é cultura geek, oriental e otaku! A primeira edição do evento será em Chapecó, contando com workshops, competições, músicas e muitas outras atrações.</h3>
+                    <h3 class="section-subheading text-muted">No dia <b style="color: #ff00ff">22 de Outubro de 2016</b> será realizado o primeiro evento do oeste de SC cujo o tema é cultura geek, oriental e otaku, o <b style="color: #ff00ff">AnimeGo! 1º Edição!</b> A primeira edição do evento será em Chapecó, contando com workshops, competições, músicas e muitas outras atrações.</h3>
                 </div>
             </div>
         </div>
